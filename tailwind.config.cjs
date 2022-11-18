@@ -16,9 +16,11 @@ module.exports = {
       brand5: "#006992",
       brand6: "#145880",
       brand7: "#D9D9D9",
+      brand7: "#D9D9D9",
     },
     backgroundImage: {
       header: "url('./src/assets/4.jpg')",
+      grad: "linear-gradient(180deg, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 100%)",
     },
     gradientColorStops: {
       first: "#EAF8BF",

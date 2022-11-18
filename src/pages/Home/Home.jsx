@@ -84,7 +84,7 @@ const Home = () => {
               }`}
               key={item.id}
             >
-              <div className="bg-gradient-to-b from-first to-second h-[60%] w-full px-3 pt-3">
+              <div className="bg-grad h-[60%] w-full px-3 pt-3">
                 <img
                   src={item.img}
                   className="object-cover w-full h-full"
