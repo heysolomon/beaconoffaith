@@ -14,8 +14,8 @@ export default defineConfig({
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
         name: 'BFA App',
-        short_name: 'MyApp',
-        description: 'My Awesome App description',
+        short_name: 'BFA',
+        description: 'Beacon of Faith Academy Website',
         theme_color: '#ffffff',
         icons: [
           {
