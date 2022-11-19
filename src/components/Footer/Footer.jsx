@@ -15,7 +15,8 @@ const Footer = () => {
             </h2>
           </div>
 
-          <div className="flex items-center justify-between">
+            
+          <div className="md:flex md:items-center md:justify-between">
             <a href="">
               <FaFacebook size={25} className="mx-3" />
             </a>
