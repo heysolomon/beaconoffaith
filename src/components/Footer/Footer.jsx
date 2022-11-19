@@ -17,16 +17,16 @@ const Footer = () => {
 
           <div className="flex items-center justify-between">
             <a href="">
-            <FaFacebook size={25} className="mx-3" />
+              <FaFacebook size={25} className="mx-3" />
             </a>
             <a href="">
-            <FaInstagram size={25} className="mx-3" />
+              <FaInstagram size={25} className="mx-3" />
             </a>
             <a href="">
-            <FaTwitter size={25} className="mx-3" />
+              <FaTwitter size={25} className="mx-3" />
             </a>
             <a href="">
-            <FaLinkedin size={25} className="mx-3" />
+              <FaLinkedin size={25} className="mx-3" />
             </a>
           </div>
         </div>
