@@ -1,5 +1,5 @@
 import logo from "../../assets/beacon-logo-dark.svg";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,6 +21,12 @@ const Footer = () => {
             </a>
             <a href="">
             <FaInstagram size={25} className="mx-3" />
+            </a>
+            <a href="">
+            <FaTwitter size={25} className="mx-3" />
+            </a>
+            <a href="">
+            <FaLinkedin size={25} className="mx-3" />
             </a>
           </div>
         </div>
