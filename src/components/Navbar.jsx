@@ -42,7 +42,7 @@ const Navbar = () => {
           <img src={logo} className="w-16" alt="" />
         </Link>
         <button className="md:hidden" onClick={openMenu}>
-          <GiHamburgerMenu />
+          <GiHamburgerMenu size={30} />
         </button>
         <ul className="hidden md:flex">
           {links.map((item) => (
