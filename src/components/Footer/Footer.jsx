@@ -82,11 +82,11 @@ const Footer = () => {
         <div>
           <h2 className="font-mon text-[14px] font-[600] mb-3">About BFA</h2>
           <p className="font-open text-[12px] font-[200]">
-            ALU provides higher education for a higher purpose. Our students
+            BFA provides higher education for a higher purpose. Our students
             declare missions, not majors. <br />
             <br /> They develop the real-world skills to take on the world’s
             most pressing challenges. And they take ownership of their learning
-            from day one through our peer and student-led approach – because ALU
+            from day one through our peer and student-led approach – because BFA
             believes in the power and agency of young people to start shaping
             the future right now. <br />
             <br /> Together with a world-class faculty and staff, our students
