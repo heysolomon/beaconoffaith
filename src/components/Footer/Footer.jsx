@@ -3,10 +3,10 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="h-min md:h-[calc(100vh-80px)] text-brand7 bg-brand relative">
-      <div className="max-w-[1070px] xl:max-w-[70%] mx-auto">
+    <div className="h-[calc(100vh-80px)] text-brand7 bg-brand relative">
+      <div className="max-w-[90%] mx-auto">
         {/* logo and social media handles */}
-        <div className="flex justify-between py-5">
+        <div className="flex flex-col md:flex-row md:justify-between py-5">
           <div className="flex items-center">
             <img src={logo} className="w-[18%] mr-2" alt="" />
             <h2 className="font-mon font-[600]">
@@ -15,21 +15,34 @@ const Footer = () => {
             </h2>
           </div>
 
-            
-          <div className="md:flex md:items-center md:justify-between">
+          <div className="flex mt-10 items-center md:justify-between">
             <a href="">
-              <FaFacebook size={25} className="mx-3" />
+              <FaFacebook size={25} className="md:mx-3 mx-2" />
             </a>
             <a href="">
-              <FaInstagram size={25} className="mx-3" />
+              <FaInstagram size={25} className="md:mx-3 mx-2" />
             </a>
             <a href="">
-              <FaTwitter size={25} className="mx-3" />
+              <FaTwitter size={25} className="md:mx-3 mx-2" />
             </a>
             <a href="">
-              <FaLinkedin size={25} className="mx-3" />
+              <FaLinkedin size={25} className="md:mx-3 mx-2" />
             </a>
           </div>
+          {/* <div className="md:hidden flex items-center justify-between">
+            <a href="">
+              <FaFacebook size={15} className="mx-1" />
+            </a>
+            <a href="">
+              <FaInstagram size={15} className="mx-1" />
+            </a>
+            <a href="">
+              <FaTwitter size={15} className="mx-1" />
+            </a>
+            <a href="">
+              <FaLinkedin size={15} className="mx-1" />
+            </a>
+          </div> */}
         </div>
         <div className="w-full h-[0.5px] rounded bg-brand7 mt-2 mb-4 md:mb-0"></div>
       </div>
