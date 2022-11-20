@@ -7,6 +7,7 @@ import circles from "../../assets/circles.svg";
 import { Link } from "react-router-dom";
 import styles from "./styles/style.module.css";
 import Footer from "../../components/Footer/Footer";
+import Top from "../../components/Top";
 
 const Home = () => {
   const cards = [
@@ -35,6 +36,7 @@ const Home = () => {
   return (
     <div className={`relative ${styles.scroll}`}>
       <Navbar />
+      <Top />
       <Header />
 
       {/* left and rignt content */}
