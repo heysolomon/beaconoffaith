@@ -47,12 +47,12 @@ const Navbar = () => {
       dropdown: true,
       open: null,
     },
-    {
-      id: 4,
-      name: "Start Application",
-      link: "",
-      dropdown: false,
-    },
+    // {
+    //   id: 4,
+    //   name: "Start Application",
+    //   link: "",
+    //   dropdown: false,
+    // },
   ];
   return (
     <nav className="w-screen fixed z-20">
@@ -79,13 +79,19 @@ const Navbar = () => {
 
               {item.dropdown && (
                 <div className="absolute left-0 right-0 w-full z-20 border-brand3 pt-6 hidden group-hover:block hover:block">
-                  <div className="relative left-0 right-0 bg-[#fff] h-[50vh] border border-brand">
+                  <div className="relative left-0 right-0 bg-[#fff] h-[50vh] border border-brand p-10">
                     {item.name}
                   </div>
                 </div>
               )}
             </ul>
           ))}
+
+          <Link to="h-full">
+            <button className="bg-brand3 text-brand2 hover:bg-[transparent] hover:text-brand3 hover:border-brand3 border-[3px] border-[transparent] font-mon font-[700] h-full px-2">
+              Start Application
+            </button>
+          </Link>
         </div>
       </div>
 
