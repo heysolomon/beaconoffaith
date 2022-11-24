@@ -78,7 +78,7 @@ const Navbar = () => {
               </li>
 
               {item.dropdown && (
-                <div className="absolute left-0 right-0 w-full z-20 border-brand3 pt-6 hidden group-hover:block hover:block">
+                <div className="absolute left-0 right-0 w-full z-20 border-brand3 pt-6 hidden transition group-hover:block hover:block">
                   <div className="relative left-0 right-0 bg-[#fff] h-[50vh] border border-brand p-10">
                     {item.name}
                   </div>

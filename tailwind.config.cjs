@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
+// tailwind.config.js
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
         mon: ["Montserrat", "sans-serif"],
         open: ["Open Sans", "sans-serif"],
       },
@@ -27,5 +32,5 @@ module.exports = {
       second: "#fff",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

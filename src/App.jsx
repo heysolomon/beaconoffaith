@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Example from "./examples/Dashexa";
+import Register from "./examples/Register";
 import Home from "./pages/Home/Home";
 
 function App() {
@@ -19,6 +21,14 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Example />} >
+            <Route path="" element={`this is the home`} />
+            <Route path="team" element={`this is the teams`} />
+            <Route path="projects" element={`this is the projects`} />
+            <Route path="check-results" element={`this is the chack results`} />
+            <Route path="reports" element={`this is the reports`} />
+          </Route>
         </Routes>
       </div>
     </Router>
