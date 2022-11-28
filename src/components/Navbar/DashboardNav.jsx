@@ -63,7 +63,7 @@ const DashboardNav = () => {
                 className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 <span className="sr-only">View notifications</span>
-                <HiOutlineBell className="h-6 w-6" aria-hidden="true" />
+                <HiOutlineBell className="h-6 w-6" />
               </button>
             </div>
 
@@ -71,7 +71,11 @@ const DashboardNav = () => {
             <div className="relative ml-3">
               <button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                 <span className="sr-only">Open user menu</span>
-                <img className="h-8 w-8 rounded-full" src={logo} alt="" />
+                <img
+                  className="w-10 h-8 rounded-full object-cover"
+                  src="https://images.unsplash.com/photo-1536337005238-94b997371b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJsYWNrJTIwc2Nob29sJTIwYm95fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                  alt=""
+                />
               </button>
             </div>
           </div>

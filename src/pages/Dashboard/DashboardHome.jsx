@@ -1,4 +1,3 @@
-import React from 'react'
 import DashboardNav from '../../components/Navbar/DashboardNav'
 
 const DashboardHome = () => {
