@@ -50,7 +50,7 @@ const Navbar = () => {
           {links.map((item) => (
             <li
               key={item.id}
-              className={`mx-5 text-brand hover:text-brand2 group border-b-[2px] border-b-[#ffff] transition hover:border-b-brand ${
+              className={`mx-5 text-brand hover:text-brand2 group border-b-[2px] border-b-[transparent] transition hover:border-b-brand ${
                 item.open && "border-b-brand"
               } py-1 my-1`}
             >
@@ -67,8 +67,8 @@ const Navbar = () => {
               </Link>
 
               {item.dropdown && (
-                <div className="absolute left-0 right-0 top-[60px] w-full z-20 border-brand3 pt-6 hidden transition group-hover:block hover:block">
-                  <div className="relative left-0 right-0 bg-[#fff] h-[50vh] border border-brand p-10">
+                <div className="absolute left-0 right-0 w-full z-20 border-brand3 pt-6 hidden transition group-hover:block hover:block">
+                  <div className="relative left-0 top-[10px] right-0 bg-[#fff] h-[50vh] border border-brand p-10">
                     {item.name}
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <Link to="h-full">
+          <Link to="">
             <button className="bg-brand3 text-brand2 hover:bg-[transparent] hover:text-brand3 hover:border-brand3 border-[3px] border-[transparent] font-mon font-[700] h-full px-2">
               Start Application
             </button>

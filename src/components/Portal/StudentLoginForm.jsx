@@ -5,7 +5,7 @@ import * as Yup from "yup";
 const StudentLoginForm = () => {
   const initialValues = {
     admissionNo: "",
-    password: ""
+    password: "",
   };
 
   const validate = Yup.object({
@@ -45,6 +45,12 @@ const StudentLoginForm = () => {
         placeholder="Password"
         width="w-[50%] text-md text-brand"
       />
+
+      <div className="flex justify-center w-full">
+        <button className="bg-brand2 text-[#fff] hover:bg-[transparent] hover:text-brand2 hover:border-brand2 border-[2px] border-[transparent] font-[700] h-10 w-[50%] rounded-md px-2">
+          Login
+        </button>
+      </div>
     </FormikForm>
   );
 };
