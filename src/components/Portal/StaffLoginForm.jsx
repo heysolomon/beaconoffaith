@@ -26,7 +26,7 @@ const StaffLoginForm = () => {
     <FormikForm
       initialValues={initialValues}
       validationSchema={validate}
-      className="w-full h-full flex items-center justify-center flex-col"
+      className="w-full h-full flex md:items-center pt-10 md:pt-0 md:justify-center flex-col"
     >
       <TextField
         tag="input"
@@ -35,7 +35,7 @@ const StaffLoginForm = () => {
         withLabel={true}
         label="Staff Code"
         placeholder="Enter your Staff Code"
-        width="w-[50%] text-md text-brand"
+        width="w-[80%] md:w-[50%] text-md text-brand"
       />
       <TextField
         tag="input"
@@ -44,10 +44,10 @@ const StaffLoginForm = () => {
         withLabel={true}
         label="Password"
         placeholder="Password"
-        width="w-[50%] text-md text-brand"
+        width="w-[80%] md:w-[50%] text-md text-brand"
       />
       <div className="flex justify-center w-full">
-        <button className="bg-brand2 text-[#fff] hover:bg-[transparent] hover:text-brand2 hover:border-brand2 border-[2px] border-[transparent] font-[700] h-10 w-[50%] rounded-md px-2">
+        <button className="bg-brand2 text-[#fff] hover:bg-[transparent] hover:text-brand2 hover:border-brand2 border-[2px] border-[transparent] font-[700] h-10 w-[80%] md:w-[50%] rounded-md px-2">
           Login
         </button>
       </div>
