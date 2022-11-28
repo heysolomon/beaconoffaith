@@ -15,7 +15,7 @@ const Portal = () => {
     <div className="">
       <Navbar />
       <div className="relative top-20 h-[calc(100vh-80px)] w-screen flex justify-center pt-20 bg-[#f4f4f4]">
-        <div className="relative w-3/6 h-[80%] 2xl:h-[70%] bg-[#fff] rounded-lg shadow">
+        <div className="relative w-[80%] md:w-3/6 h-[80%] 2xl:h-[70%] bg-[#fff] rounded-lg shadow">
           <PortalTabs />
           <div className="w-full h-full rounded-b-lg">
             <Outlet />
