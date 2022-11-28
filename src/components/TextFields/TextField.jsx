@@ -11,8 +11,8 @@ export const TextField = ({
   withIcon = false,
   tag, //for the field tags
   icon,
-  options,
   state,
+  options,
   ...props
 }) => {
   const [field, meta] = useField(props);

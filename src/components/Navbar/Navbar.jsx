@@ -1,25 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import logo from "../../assets/beacon-logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Menu from "../Menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  const [linkHover, setLinkHover] = useState(false);
-  const [stillOpen, setStillOpen] = useState(false);
-
-  const openDropdown = () => {
-    setDropdown(!dropdown);
-  };
-
-  // const dropdownOpen = (bool) => {
-  //   setStillOpen(bool);
-  //   return;
-  // };
 
   const openMenu = () => {
     setIsOpen(!isOpen);
@@ -29,13 +17,13 @@ const Navbar = () => {
     {
       id: 1,
       name: "About BFA",
-      link: "",
+      link: "#",
       dropdown: true,
     },
     {
       id: 2,
       name: "Study at BFA",
-      link: "",
+      link: "#",
       dropdown: true,
     },
     {
@@ -62,7 +50,16 @@ const Navbar = () => {
                 item.open && "border-b-brand"
               } py-1 my-1`}
             >
-              <Link to={item.link} className="">
+              <Link
+                to={item.link}
+                className=""
+                style={({ isActive }) => ({
+                  border: isActive ? "" : "2px solid #27476E",
+                  borderBottom: "",
+                })}
+
+                end
+              >
                 {item.name}
               </Link>
 

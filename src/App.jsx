@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import StudentLoginForm from "./components/Portal/StudentLoginForm";
 import Example from "./examples/example";
 import Register from "./examples/Register";
 import Portal from "./pages/Application/Portal";
@@ -28,7 +29,7 @@ function App() {
 
           {/* Student and Staff Login portal */}
           <Route path="/portal" element={<Portal />} >
-            <Route index element={`this is the student login`} />
+            <Route index element={<StudentLoginForm />} />
             <Route path="staff" element={`this is the staff login`} />
           </Route>
 
