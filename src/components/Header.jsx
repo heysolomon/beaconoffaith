@@ -17,6 +17,7 @@ const Header = () => {
         height="100%"
         src="https://giphy.com/embed/Pf3ijvIq3yCTCo24qu/video"
         width="100%"
+        allowFullScreen
       ></iframe>
       <div className="absolute w-full h-full">
         <div className="flex flex-col h-full items-center justify-center max-w-[1070px] mx-auto">

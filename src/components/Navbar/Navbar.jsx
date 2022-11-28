@@ -76,7 +76,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <Link to="">
+          <Link to="/dashboard">
             <button className="bg-brand3 text-brand2 hover:bg-[transparent] hover:text-brand3 hover:border-brand3 border-[3px] border-[transparent] font-mon font-[700] h-full px-2">
               Start Application
             </button>
