@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { HiOutlineBell } from "react-icons/hi2";
 import { NavLink } from "react-router-dom";
 
 import logo from "../../assets/beacon-logo-dark.svg";
+import Menu from "../Menu";
 
 const DashboardNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   const navItems = [
     {
       id: 1,
@@ -55,6 +63,9 @@ const DashboardNav = () => {
             </div>
           </div>
 
+          <button className="md:hidden" onClick={openMenu}>
+            <GiHamburgerMenu size={30} />
+          </button>
           <div className="hidden md:flex md:items-center">
             {/* Notifications */}
             <div className="ml-4 flex items-center md:ml-6">
@@ -81,6 +92,24 @@ const DashboardNav = () => {
           </div>
         </div>
       </div>
+
+      {isOpen && (
+        <Menu
+          click={openMenu}
+          className="pl-4 text-brand-prussian bg-brand-gains"
+        >
+          <ul className="my-10">
+            {navItems.map((item) => (
+              <NavLink to={item.link} key={item.id}>
+                <li className="mb-4 flex items-center">
+                  {/* <img src={item.img} className="w-[20px] mr-2" /> */}
+                  {item.name}
+                </li>
+              </NavLink>
+            ))}
+          </ul>
+        </Menu>
+      )}
     </nav>
   );
 };
