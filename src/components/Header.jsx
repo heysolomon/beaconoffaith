@@ -5,11 +5,19 @@ import bg from "../assets/4.jpg";
 const Header = () => {
   return (
     <header className="flex 2xl:h-[70vh] h-screen relative top-[84px] bg-brand2 bg-cover">
-      <img
+      {/* <img
         src={bg}
         className="w-full h-full object-cover opacity-[0.5]"
         alt=""
-      />
+      /> */}
+
+      <iframe
+        allow="fullscreen"
+        frameBorder="0"
+        height="100%"
+        src="https://giphy.com/embed/Pf3ijvIq3yCTCo24qu/video"
+        width="100%"
+      ></iframe>
       <div className="absolute w-full h-full">
         <div className="flex flex-col h-full items-center justify-center max-w-[1070px] mx-auto">
           <h1 className="font-mon text-center text-[#fff] mr-3 text-[42px] font-[500]">
