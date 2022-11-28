@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 
 const PortalTabs = () => {
   return (
-    <div className="grid grid-cols-2 h-[7%] md:h-[10%] bg-brand2 text-brand7 rounded-t-lg">
+    <div className="grid grid-cols-2 h-[8%] md:h-[10%] bg-brand2 text-brand7 rounded-t-lg">
       <Link
         to=""
         className="flex items-center justify-center"
