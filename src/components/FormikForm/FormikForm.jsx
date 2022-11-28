@@ -5,7 +5,7 @@ const FormikForm = ({ children, className, initialValues, validationSchema }) =>
 		<div className={className}>
 			<Formik initialValues={initialValues} validationSchema={validationSchema}>
 				{(formik) => (
-					<Form className='flex justify-center items-center flex-col my-[50px]'>
+					<Form className='flex justify-center items-center flex-col w-full'>
 						{children}
 					</Form>
 				)}

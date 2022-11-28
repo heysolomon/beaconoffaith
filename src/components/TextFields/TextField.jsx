@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useField } from "formik";
+import { ErrorMessage, useField } from "formik";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 export const TextField = ({
@@ -30,7 +30,7 @@ export const TextField = ({
   return (
     <div className={`flex flex-col mb-5 ${width}`}>
       {withLabel && (
-        <label className={`text-lg text-left mb-[8px]`} htmlFor={field.name}>
+        <label className={`text-left mb-[8px]`} htmlFor={field.name}>
           {label}
         </label>
       )}
@@ -54,7 +54,7 @@ export const TextField = ({
               placeholder={props.placeholder}
               autoComplete="off"
               type={type === "password" ? passwordType : type}
-              className="w-full h-full focus-visible:outline-none focus:outline-none border-0 focus:border-0 bg-transparent"
+              className="w-full h-full focus-visible:outline-none focus:outline-none border-0 focus:border-0 bg-transparent placeholder:text-sm"
               disabled={state === "disabled"}
               readOnly={state === "readonly"}
             />
@@ -100,11 +100,11 @@ export const TextField = ({
         )}
       </div>
 
-      {/* <ErrorMessage
-        className="text-red-600 text-xs mt-0"
+      <ErrorMessage
+        className="text-[#dc2626] text-xs mt-0"
         component="div"
         name={field.name}
-      /> */}
+      />
     </div>
   );
 };
