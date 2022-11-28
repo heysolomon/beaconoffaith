@@ -21,7 +21,6 @@ module.exports = {
       brand5: "#006992",
       brand6: "#145880",
       brand7: "#D9D9D9",
-      brand7: "#D9D9D9",
     },
     backgroundImage: {
       header: "url('./src/assets/4.jpg')",
@@ -32,5 +31,5 @@ module.exports = {
       second: "#fff",
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [],
 };

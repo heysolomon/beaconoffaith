@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
-import logo from "../assets/beacon-logo.svg";
+import logo from "../../assets/beacon-logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Menu from "./Menu";
+import Menu from "../Menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,28 +31,19 @@ const Navbar = () => {
       name: "About BFA",
       link: "",
       dropdown: true,
-      open: null,
     },
     {
       id: 2,
       name: "Study at BFA",
       link: "",
       dropdown: true,
-      open: null,
     },
     {
       id: 3,
       name: "Portal",
-      link: "",
-      dropdown: true,
-      open: null,
+      link: "/portal",
+      dropdown: false,
     },
-    // {
-    //   id: 4,
-    //   name: "Start Application",
-    //   link: "",
-    //   dropdown: false,
-    // },
   ];
   return (
     <nav className="w-screen fixed z-20">
@@ -63,19 +54,17 @@ const Navbar = () => {
         <button className="md:hidden" onClick={openMenu}>
           <GiHamburgerMenu size={30} />
         </button>
-        <div className="hidden md:flex">
+        <ul className="hidden md:flex">
           {links.map((item) => (
-            <ul className="group">
-              <li
-                key={item.id}
-                className={`mx-5 text-brand hover:text-brand2 border-b-[2px] border-b-[#ffff] transition hover:border-b-brand ${
-                  item.open && "border-b-brand"
-                } py-1 my-1`}
-              >
-                <Link to={item.link} className="">
-                  {item.name}
-                </Link>
-              </li>
+            <li
+              key={item.id}
+              className={`mx-5 text-brand hover:text-brand2 group border-b-[2px] border-b-[#ffff] transition hover:border-b-brand ${
+                item.open && "border-b-brand"
+              } py-1 my-1`}
+            >
+              <Link to={item.link} className="">
+                {item.name}
+              </Link>
 
               {item.dropdown && (
                 <div className="absolute left-0 right-0 w-full z-20 border-brand3 pt-6 hidden transition group-hover:block hover:block">
@@ -84,7 +73,7 @@ const Navbar = () => {
                   </div>
                 </div>
               )}
-            </ul>
+            </li>
           ))}
 
           <Link to="h-full">
@@ -92,7 +81,7 @@ const Navbar = () => {
               Start Application
             </button>
           </Link>
-        </div>
+        </ul>
       </div>
 
       {isOpen && (

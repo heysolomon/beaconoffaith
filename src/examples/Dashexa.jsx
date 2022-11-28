@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+// import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { HiOutlineBars3, HiOutlineBell, HiOutlineXMark } from "react-icons/hi2";
-import logo from "../assets/beacon-logo-dark.svg";
+import logo from "../";
 import { NavLink, Outlet } from "react-router-dom";
 
 const user = {
@@ -42,6 +42,8 @@ export default function Example() {
                     <div className="flex-shrink-0">
                       <img className="w-16" src={logo} alt="Beacon Logo" />
                     </div>
+
+                    {/* Nav items block */}
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
@@ -69,6 +71,8 @@ export default function Example() {
                       </div>
                     </div>
                   </div>
+
+                  {/* Profile and notifications */}
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
                       <button
@@ -100,7 +104,7 @@ export default function Example() {
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
                         >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-[#fff] py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <Menu.Items className="absolute right-0 z-20 mt-2 w-48 origin-top-right rounded-md bg-[#fff] py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 <NavLink

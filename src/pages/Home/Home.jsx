@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import img from "../../assets/1.jpg";
 import grid from "../../assets/5.jpg";
 import circles from "../../assets/circles.svg";
