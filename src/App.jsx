@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import StaffLoginForm from "./components/Portal/StaffLoginForm";
 import StudentLoginForm from "./components/Portal/StudentLoginForm";
 import Example from "./examples/example";
 import Register from "./examples/Register";
@@ -30,7 +31,7 @@ function App() {
           {/* Student and Staff Login portal */}
           <Route path="/portal" element={<Portal />} >
             <Route index element={<StudentLoginForm />} />
-            <Route path="staff" element={`this is the staff login`} />
+            <Route path="staff" element={<StaffLoginForm />} />
           </Route>
 
           {/* Student Dashboard */}

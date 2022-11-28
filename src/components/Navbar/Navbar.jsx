@@ -1,12 +1,16 @@
 import React from "react";
 import { useState } from "react";
 
-import { NavLink as Link } from "react-router-dom";
+import { NavLink as Link, useLocation } from "react-router-dom";
 import logo from "../../assets/beacon-logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Menu from "../Menu";
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const path = location.pathname;
+
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => {
@@ -17,13 +21,13 @@ const Navbar = () => {
     {
       id: 1,
       name: "About BFA",
-      link: "#",
+      link: "/",
       dropdown: true,
     },
     {
       id: 2,
       name: "Study at BFA",
-      link: "#",
+      link: "/",
       dropdown: true,
     },
     {
@@ -52,19 +56,18 @@ const Navbar = () => {
             >
               <Link
                 to={item.link}
-                className=""
+                className="py-1"
                 style={({ isActive }) => ({
-                  border: isActive ? "" : "2px solid #27476E",
-                  borderBottom: "",
+                  borderBottom:
+                    isActive && path !== "/" ? "2px solid #27476E" : "",
                 })}
-
                 end
               >
                 {item.name}
               </Link>
 
               {item.dropdown && (
-                <div className="absolute left-0 right-0 w-full z-20 border-brand3 pt-6 hidden transition group-hover:block hover:block">
+                <div className="absolute left-0 right-0 top-[60px] w-full z-20 border-brand3 pt-6 hidden transition group-hover:block hover:block">
                   <div className="relative left-0 right-0 bg-[#fff] h-[50vh] border border-brand p-10">
                     {item.name}
                   </div>
