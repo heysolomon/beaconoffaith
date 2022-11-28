@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import img from "../../assets/1.jpg";
-import grid from "../../assets/5.jpg";
+import grid from "../../assets/pic.jpg";
 import circles from "../../assets/circles.svg";
 import { Link } from "react-router-dom";
 import styles from "./styles/style.module.css";
@@ -39,7 +39,6 @@ const Home = () => {
       <Top />
       <Header />
 
-      {/* left and rignt content */}
       <div className="bg-[#ffff] py-10 md:py-0 md:h-[calc(100vh-80px)] relative flex flex-col justify-center">
         <img
           src={circles}
@@ -47,6 +46,7 @@ const Home = () => {
           alt=""
         />
 
+        {/* left and rignt content */}
         <div className="max-w-[80%] md:max-w-[83%] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10 md:h-full">
           <div className="flex items-center m-0">
             <img src={grid} className="relative" alt="" />
