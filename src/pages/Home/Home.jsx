@@ -21,14 +21,14 @@ const Home = () => {
     {
       id: 2,
       img: img,
-      text: "Your education at ALU will equip you with the skills, tools and resources to build sustainable solutions to some of Africa’s biggest challenges",
+      text: "Your education at BFA will equip you with the skills, tools and resources to build sustainable solutions to some of Africa’s biggest challenges",
       head: "BE A BUILDER",
       border: true,
     },
     {
       id: 3,
       img: img,
-      text: "Every student at ALU graduates with a strong foundation in leadership that sets them up to succeed in whatever comes next.",
+      text: "Every student at BFA graduates with a strong foundation in leadership that sets them up to succeed in whatever comes next.",
       head: "BE A LEADER",
       border: false,
     },
@@ -53,13 +53,18 @@ const Home = () => {
           </div>
           <div className="flex flex-col justify-center">
             <h2 className="text-brand font-[700] text-[40px] mb-5">
-              Lorem ipsum, dolor sit amet{" "}
+            Unleashing Potentials and Building Futures{" "}
             </h2>
             <p className="font-open text-[16px] text-brand2 font-[500]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              totam, maiores tenetur vitae necessitatibus nisi quam saepe
-              itaque, earum deserunt sunt, provident ab mollitia numquam magnam
-              iusto corporis perspiciatis modi.
+              We are dedicated to providing the best possible education for
+              every child. We believe that every student has the potential to
+              succeed, and we work hard to create a supportive and inclusive
+              learning environment where all students can thrive. <br /><br />
+              Our highly qualified teachers are passionate about their subjects
+              and are committed to helping every student reach their full
+              potential. We offer a wide range of academic programs, including
+              advanced placement courses and enrichment opportunities, to
+              challenge and engage every student. <br /> <br />
             </p>
             <Link to="">
               <button className="bg-brand5 text-[#fff] hover:bg-[transparent] hover:text-brand5 hover:border-brand5 border-[3px] border-[transparent] font-mon font-[700] p-3 mt-4">
