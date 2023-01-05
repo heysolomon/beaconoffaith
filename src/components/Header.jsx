@@ -8,7 +8,7 @@ const Header = () => {
     <div className="w-full h-full absolute top-0 left-0 right-0 bg-brand2 opacity-[0.5]">
 
     </div>
-      <video width="100%" height="100%" autoPlay loop muted className="object-cover">
+      <video width="100%" height="100%" autoPlay loop muted preload="true" playsInline className="object-cover">
         <source src={vid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
