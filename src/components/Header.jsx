@@ -1,24 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg from "../assets/4.jpg";
+import vid from "../assets/vid.mp4";
 
 const Header = () => {
   return (
     <header className="flex 2xl:h-[70vh] h-screen relative top-[84px] bg-brand2 bg-cover">
-      {/* <img
-        src={bg}
-        className="w-full h-full object-cover opacity-[0.5]"
-        alt=""
-      /> */}
+    <div className="w-full h-full absolute top-0 left-0 right-0 bg-brand2 opacity-[0.5]">
 
-      <iframe
-        allow="fullscreen"
-        frameBorder="0"
-        height="100%"
-        src="https://giphy.com/embed/Pf3ijvIq3yCTCo24qu/video"
-        width="100%"
-        allowFullScreen
-      ></iframe>
+    </div>
+      <video width="100%" height="100%" autoPlay loop muted className="object-cover">
+        <source src={vid} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute w-full h-full">
         <div className="flex flex-col h-full items-center justify-center max-w-[1070px] mx-auto">
           <h1 className="font-mon text-center text-[#fff] mr-3 text-[42px] font-[500]">
