@@ -15,8 +15,8 @@ const Header = () => {
       <div className="absolute w-full h-full">
         <div className="flex flex-col h-full items-center justify-center max-w-[1070px] mx-auto">
           <h1 className="font-mon text-center text-[#fff] mr-3 text-[42px] font-[500]">
-            Join the new generation of change makers in <br />
-            <span className="text-[70px] font-[700]">Africa</span>
+          <span className="text-[40px] md:text-[70px] font-[700]">Beacon of Faith Academy</span> <br />
+         A Place to Learn, Grow, and Thrive<br />
           </h1>
 
           <Link to="">
